@@ -1,0 +1,127 @@
+
+$text-color:#737373;
+
+// body {
+//     // background-color: whitesmoke;
+//     // background-color: pink;
+//     min-height: 100vh;
+// }
+.form-grand-dad {
+    // background-color: pink;
+    display: flex;
+    justify-content: center;
+    // padding: 50px;
+    padding: 30px 15px;
+    min-height: 100vh;
+    background-color: whitesmoke;
+
+    .form-dad {
+        // width: 70%;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        border: 2px solid $text-color;
+        font-family: "Montserrat";
+        height: fit-content;
+        padding-bottom: 60px;
+
+        h2{
+            text-transform: uppercase;
+            font-family: "Montserrat";
+            font-weight: bold;
+            // font-size: 40px;
+            font-size: 25px;
+            margin-top: 40px;
+                  text-align: center;
+        }
+
+        .inputs-dad{
+            // width: 40%;
+            width: 85%;
+            // background-color: pink;
+            margin-top: 30px;
+
+            .input{
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .category{
+                margin-top:30px;                
+                width: 100% !important;
+                // background-color: pink;
+            }
+
+            .ant-select-selection-item {
+                font-size: 20px;           
+                 font-family: "Montserrat";
+
+            }  
+            
+            .ant-select-item-option-content {
+                font-size: 40px;
+            }
+            .file-dad{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                // background-color: yellow;
+                margin-top: 30px;
+            }
+
+            .file{ 
+               word-wrap: break-word;
+               min-width: 200px;
+               max-width: 400px;
+               margin-left: 20px;
+            //    background-color: pink;
+            font-size: 15px;
+
+            }
+
+            .submit{
+                margin-top: 30px;
+                width: 100%;
+                // padding: 10px ;
+                font-family: "Montserrat";
+                font-size: 15px;
+            }
+        }
+        
+    }
+}
+
+.error-helper-text{
+    font-size: 15px;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    .form-grand-dad {
+    padding: 50px;
+
+    .form-dad {
+        width: 70%;
+
+        h2{
+            font-size: 40px;
+        }
+
+        
+    }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .form-grand-dad {
+        .form-dad {
+            .inputs-dad{
+                width: 40%;
+            }
+        }
+    }
+}

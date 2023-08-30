@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+
+
+:root {
+    background-color: #FFFFFF;
+}
+$logoColor: #252B42;
+$color2:#494E61;
+$textColor:#7F7F7F;
+
+.logo{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: $logoColor;
+    // font-size: 37px;
+    font-size: 20px !important;
+    // margin:  15px;
+    margin:  13px;
+
+
+}
+.login-comp{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+.login-head {
+    font-family: "Quicksand";
+    font-weight: 500;
+    // font-size: 55px;
+    font-size: 40px !important;
+    color: black;
+}
+
+.login-p {
+    // font-size: 20px;
+    font-size: 12px !important;
+    text-align: center;
+    margin-top: 10px !important;
+    color: $color2;margin-bottom: 44px;
+}
+
+
+
+}
+
+.Inputs{
+    // width: 110%;
+    width: 140% !important;
+    
+    .text-field{
+        width: 100%;
+        margin-bottom: 25px;
+        
+    }
+
+    .signin-btn{
+        width: 100%;
+        padding: 9px;
+        // font-size: 17px;
+        font-size: 12px !important;
+        
+    
+    }
+
+    .new{
+        text-align: center;
+        margin-top: 35px;
+        // font-size: 16px;
+        font-size: 13px;
+        font-family: 'Montserrat';
+
+        .create{
+            color: $textColor;
+                    
+        }
+    }
+    
+}
+
+@media screen and (min-width: 700px) {
+    .logo{
+        font-size: 30px !important;
+        margin:  15px;
+    }
+    .login-comp{
+        .login-head {
+            font-size: 55px !important;
+        }
+        .login-p {
+            font-size: 20px !important;
+        }
+    }
+
+    .Inputs{
+        // width: 110% !important;
+        .signin-btn{
+            font-size: 17px !important;
+        }
+
+        .new{
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .logo{
+        font-size: 37px !important;
+    }
+
+    .Inputs{
+        width: 110% !important;
+    }
+}

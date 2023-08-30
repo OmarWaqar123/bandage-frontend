@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    background-color: #FFFFFF;
+}
+$logoColor: #252B42;
+$color2:#494E61;
+$textColor:#7F7F7F;
+
+.logo{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: $logoColor;
+    // font-size: 37px;
+    font-size: 20px !important;
+    padding: 5px 15px;
+
+}
+.login-comp{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+.login-head {
+    font-family: "Quicksand";
+    font-weight: 500;
+    // font-size: 55px;
+    color: black;
+    
+    font-size: 40px !important;
+}
+
+.login-p {
+    font-size: 20px;
+    font-size: 12px !important;
+    margin-top: -35px;
+    text-align: center;
+    // background-color: pink;
+    color: $color2;
+    margin-bottom: 44px;
+}
+
+
+
+}
+
+.Inputs{
+    width: 110%;
+    .text-field{
+        width: 100%;
+        margin-bottom: 25px;
+        
+    }
+
+    .signin-btn{
+        width: 100%;
+        padding: 9px;
+        font-size: 17px;
+        
+    
+    }
+
+    .new{
+        text-align: center;
+        margin-top: 35px;
+        font-family: 'Montserrat';
+
+        .create{
+            color: $textColor;
+                    
+        }
+    }
+    
+}
+
+
+// .password-dad{
+//     // width: 100%;
+//     position: relative;
+
+
+//     .eye-img {
+//         position: absolute;
+//         width: 30px;
+//         right: 20px;
+//         top: 18px;
+//     }
+// }
+
+

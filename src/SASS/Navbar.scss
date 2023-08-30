@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+$logoColor: #252B42;
+$color2:#494E61;
+$textColor:#7F7F7F;
+$textColor2:#737373;
+$logincolor:#23A6F0;
+$blue: #00BBDE;
+$green: #2DC071;
+$blue2: #23A6F0;
+$textcolor: #737373;
+
+
+
+
+.check{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    align-items: center;
+    // background-color: pink;
+    height: 75px;
+
+
+    .nav-logo{
+        // font-size: 27px;
+        font-size: 20px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        // margin-left: 55px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .routes {
+        // display: flex;
+        display: none;
+
+        gap: 40px;
+        margin-right: 10%;
+        color: $textColor2;
+        font-size: 16px;
+        font-family: "Montserrat";
+        font-weight: bold;
+        p{
+            cursor: pointer;
+        }
+
+        .shop{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .arrowdown{
+            cursor: pointer;
+        }
+        .arrowup{
+            transform: rotate(180deg);
+            transition: all 0.1s ease-in;
+            cursor: pointer;
+        }
+    }
+
+    .right-side{
+        display: flex;
+        align-items: center;
+        // gap: 30px;
+        gap: 10px;
+        // margin-right: 80px;
+        margin-right: 20px;
+
+        .loginorRegister{
+            gap: 15px;
+            display: flex;
+            align-items: center;
+
+            .prof{
+                cursor: pointer;
+                    display: none;
+            }
+
+            h5{
+                color: $logincolor;
+                font-size: 15px;
+                    display: none;
+            }
+
+            .log-reg{
+                cursor: pointer;
+            }
+             
+            .search-parent{
+                position: absolute;
+                right: 13px;
+                display: flex;
+                align-items: center;
+            
+            .search{
+                height: 33px;
+                
+                text-indent: 5px;
+                font-family: "Montserrat";
+                border-radius: 6px;
+                outline: none;
+                border: 1px solid $textColor2;
+
+            }
+
+            .cross{
+                margin-left: -22px;
+                cursor: pointer;
+            }
+        }
+            .search:focus{
+                outline: 1px solid $logincolor;
+                border: 1px solid $logincolor;
+
+            }
+
+
+
+
+        }
+
+        .icon{
+            cursor: pointer;
+                 color: black !important;
+        }
+
+        .cart{
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            // color: $logincolor;
+             color: black;
+                 
+        }
+        .heart{
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            // color: $logincolor;
+             color: black;  
+                  display: none;
+                 
+        }
+
+        .ham{
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            color: black;  
+            cursor: pointer;
+
+        }
+
+        .clear{
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            color: black;  
+            cursor: pointer;
+        }
+
+        
+    }
+}
+
+.menu{
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+}
+
+.drop-down-close{
+    display: none;
+}
+.drop-down-open{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5px;
+   padding-bottom: 35px;
+
+
+   p{
+    margin-top: 20px;
+    font-family: "Montserrat";
+    color: $textcolor;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+   }
+   p:hover{
+    background-color: rgba(255, 218, 185,0.5);
+   }
+   p:active{
+    color: #4b4b4b;
+   }
+
+}
+@media only screen and (min-width: 710px) {
+    .check{
+        .right-side{
+            .loginorRegister{
+                .search-parent{
+                    position: relative;
+                    .cross{
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+    .check{
+
+        .nav-logo{
+            font-size: 27px ;
+            margin-left: 55px;
+        }
+
+        .right-side{
+            margin-right: 50px;
+            gap: 30px;
+        }
+
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .check{
+        
+    .routes {
+        display: flex;
+    }
+        .right-side{
+            margin-right: 80px;
+
+            .loginorRegister{
+                .prof{
+                        display: block;
+                }
+                h5{
+                    display: block;
+                }
+            }
+
+            .icon{
+                color: $logincolor !important;
+            }
+
+            .cart{
+                color: $logincolor;
+            }
+
+            .heart{
+                color: $logincolor;
+                display: flex;
+            }
+
+            .ham{
+                display: none;
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,97 @@
+.product-des{
+    display: grid;
+    // justify-content: space-between;
+    align-items: center;
+    // grid-template-columns: 1fr 1.3fr 1fr 1fr 0.5fr 0.5fr ;
+    grid-template-columns: 1fr;
+    font-family: "Montserrat"; 
+    margin-bottom: 50px;
+
+    .img-dad{
+        // width: 100px;
+        // height: 100px;
+        width: 100%;
+        height: 300px;
+        
+        // background-color: pink;
+        
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .product-name{
+        // background-color: pink;
+        cursor: pointer;
+        // font-size: 16px;
+        font-size: 22px;
+              margin-bottom:15px;
+    }
+
+    .price{
+        // font-size: 16px;
+        font-size: 24px;
+            margin-bottom: 15px;
+    }
+
+    .category{
+        // font-size: 16px;
+        font-size: 23px;
+            margin-bottom: 14px;
+    }
+
+    .checkout{
+        // margin-right: 20px;
+                 margin-bottom: 14px;
+    }
+
+    .remove{
+        background-color: rgb(205, 7, 7);
+    }
+
+    .remove:hover{
+        background-color: rgb(145, 4, 4);
+
+    }
+    .remove:active{
+        background-color: rgb(145, 4, 4);
+
+    }
+}
+
+
+@media only screen and (min-width: 1100px) {
+    .product-des{
+        grid-template-columns: 1fr 1.3fr 1fr 1fr 0.5fr 0.5fr ;
+        ;
+
+        .img-dad{
+            width: 100px;
+            height: 100px;
+        }
+
+        .product-name{
+            font-size: 16px;
+            margin-bottom: 0px;
+        }
+
+        .price{
+            font-size: 16px;
+            margin-bottom: 0px;
+            margin-left: 14px;
+        }
+
+        .category{
+            font-size: 16px;
+                margin-bottom: 0px;
+        }
+
+        .checkout{
+            margin-right: 20px;
+            margin-bottom: 0px;
+            padding: 5px 50px;
+        }
+    }
+}

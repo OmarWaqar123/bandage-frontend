@@ -1,0 +1,283 @@
+
+$text-color:#737373;
+
+.editor-dad{
+    text-align: center;
+    margin-top: 80px;
+   .editor{
+     //    font-size: 40px;
+        font-size: 30px;
+
+        font-family: "Montserrat"; 
+        text-transform: uppercase;
+        font-weight: 700;
+   }
+
+   p{
+//     font-size: 20px;
+    font-size: 16px;
+    color: $text-color;
+    font-family: "Montserrat"; 
+    margin-top: 15px;
+   }
+}
+
+.cards-dad{
+     // background-color: pink;
+     display: flex;
+         flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 50px;
+     gap: 50px;
+     overflow: hidden;
+     margin-bottom: 100px;
+
+     .first-boyngirl{
+          display: flex !important;
+          // background-color: pink;
+          gap: 40px;
+             flex-direction: column;
+             align-items: center;
+          
+
+          .boy-1{
+               // background-color: yellow;
+               // width: 600px;   
+               width: 300px;
+                    height: 400px;   
+               position: relative; 
+               overflow: hidden;         
+               img{ 
+                       object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+               }
+
+               .men{
+                    position: absolute;
+                    // top: 85%;
+                    top: 70%;
+                    left: 40px;
+                    background-color: white;
+                    text-transform: uppercase;
+                    color: black;
+                    font-family: "Montserrat"; 
+                    font-weight: 700;
+                    font-size: 24px;
+                    width: 180px;
+                    height: 60px;
+                    outline: none;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+               }
+
+               .men:hover{
+                    background-color: rgb(227, 222, 222);
+               }
+          }
+
+          .girl-1{
+          //    background-color: yellow;
+             width: 300px;
+          //    height: 100%; 
+             position: relative;
+             img{
+                  object-fit: cover;
+               width: 100%;
+               height: 100%;
+             }
+
+             .girl{
+               position: absolute;
+               top: 85%; //you must re enter this value on big screen
+               left: 40px;
+               background-color: white;
+               text-transform: uppercase;
+               color: black;
+               font-family: "Montserrat"; 
+               font-weight: 700;
+               font-size: 24px;
+               width: 180px;
+               height: 60px;
+               outline: none;
+               border: none;
+               border-radius: 3px;
+               cursor: pointer;
+             }
+
+             .girl:hover{
+               background-color: rgb(227, 222, 222);
+          }
+          }
+     }
+
+     .second-boyngirl{
+          display: flex;
+               flex-direction: column;
+          justify-content: center;
+          // background-color: yellow;
+          height: 627px;
+          gap: 40px;
+
+          .girl-2{
+               //    background-color: green;
+                  height: 300px;
+                  position: relative;
+               img{
+                    // background-color: pink;
+                    width: 100%;
+                    height: 100%;
+               }
+
+               .Accessories{
+                    position: absolute;
+               top: 70%;
+               left: 30px;
+               background-color: white;
+               text-transform: uppercase;
+               color: black;
+               font-family: "Montserrat"; 
+               font-weight: 700;
+                    font-size: 24px;
+                    width: 200px;
+                    height: 60px;
+                    outline: none;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+               }
+
+               .Accessories:hover{
+                    background-color: rgb(227, 222, 222);
+               }
+          }
+          .boy-2{
+                    height: 300px;
+                    position: relative;
+               img{
+                    width: 100%;
+                    height: 100%;
+               }
+               
+               .kids{
+                    position: absolute;
+                    top: 70%;
+                    left: 30px;
+                    background-color: white;
+                    text-transform: uppercase;
+                    color: black;
+                    font-family: "Montserrat"; 
+                    font-weight: 700;
+                         font-size: 24px;
+                         width: 170px;
+                         height: 60px;
+                         outline: none;
+                         border: none;
+                         border-radius: 3px;
+                         cursor: pointer;
+
+               }
+               .kids:hover{
+                    background-color: rgb(227, 222, 222);
+
+               }
+          }
+     }
+}
+
+
+
+@media only screen and (min-width: 390px) {
+     .editor-dad{
+
+         .editor{
+              font-size: 40px;
+              
+         }
+      
+         p{
+          font-size: 18px;
+          }
+      }
+}
+
+
+@media only screen and (min-width: 500px) {
+     .editor-dad{
+       
+          p{
+           font-size: 20px;
+           }
+       }
+}
+
+
+@media only screen and (min-width: 700px){
+     .cards-dad{
+          // flex-direction: row;
+          
+          .first-boyngirl{
+                  flex-direction: row;
+                  gap: 18px;
+                  .boy-1{
+                    // margin-bottom: auto;
+
+                  }
+
+                  .girl-1{
+                    height: 400px;
+                    .girl{
+                        top: 70%;
+                    }
+                  }
+          }
+
+          .second-boyngirl{
+               flex-direction: row;
+          }
+     }
+}
+
+
+
+@media only screen and (min-width: 1200px){
+     .cards-dad{
+          flex-direction: row;
+          gap: 30px;
+
+          .first-boyngirl{
+               // justify-content: center;
+               margin-bottom: auto;
+               
+               .boy-1{
+                    width: 600px;
+                    height: 600px;
+                    // margin-bottom: auto;
+
+                    .men{
+                         top: 85%;
+                    }
+               }
+
+               .girl-1{
+                    height: 600px ;
+
+                    .girl{
+                         top: 85%;
+                    }
+               }
+
+          }
+
+          .second-boyngirl{
+               flex-direction: column;
+               gap: 15px;
+               margin-bottom: auto;
+               // background-color: yellow;
+               height: 600px;
+               
+          }
+     }
+}

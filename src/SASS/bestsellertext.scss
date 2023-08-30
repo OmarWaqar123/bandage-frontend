@@ -1,0 +1,56 @@
+
+$text:#737373;
+
+.best{
+    text-align: center;
+    margin-top: 150px;
+    .feature{
+       color: $text;
+       font-family: "Montserrat";
+    //    font-size: 24px;
+       font-size: 20px;
+       margin-bottom: 15px;
+
+    }
+
+    h3{
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        // font-size: 35px;
+        font-size: 30px;
+        
+        margin-bottom: 15px;
+
+    }
+
+    .problem{
+        font-family: "Montserrat";
+        color: $text;
+        // font-size: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .best{
+        .problem{
+            font-size: 20px;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 550px){
+    .best{
+        
+        .feature{
+           font-size: 24px;
+        }
+
+        h3{
+            font-size: 35px;
+        }
+    }
+}
