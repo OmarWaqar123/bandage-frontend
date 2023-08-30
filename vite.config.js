@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server:{
   proxy: {
-    "/product": "http://localhost:4000",
-    "/auth": "http://localhost:4000"
+    "/product": "https://bandagebyomar-api.onrender.com",
+    "/auth": "https://bandagebyomar-api.onrender.com"
   }
 }
 })
